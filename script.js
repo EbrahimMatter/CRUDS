@@ -61,13 +61,6 @@ create.addEventListener("click", function (e) {
     count: count.value,
     category: category.value,
   };
-  if (info.count > 1) {
-    for (let i = 0; i < info.count; i++) {
-      products.push(info);
-    }
-  } else {
-    products.push(info);
-  }
   localStorage.setItem("product", JSON.stringify(products));
   clearData();
   showData();
