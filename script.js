@@ -35,6 +35,23 @@ if (localStorage.getItem("product")) {
 
 create.addEventListener("click", function (e) {
   e.preventDefault();
+  let fields = [title, price, taxes, ads, count, category];
+  let valid = true;
+
+  fields.forEach((field) => {
+    if (field.value.trim() === "") {
+      field.style.border = "2px solid red";
+      valid = false;
+    } else {
+      field.style.border = "2px solid green";
+    }
+  });
+
+  if (!valid) {
+    alert("Please fill in all fields!");
+    return;
+  }
+
   let info = {
     title: title.value,
     price: price.value,
