@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cruds system</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Cruds System</h1>
+        <p>product managern system</p>
+      </header>
+      <form action="">
+        <input type="text" id="title" placeholder="title" />
+        <div class="money">
+          <input type="number" id="price" placeholder="price" />
+          <input type="number" id="taxes" placeholder="taxes" />
+          <input type="number" id="ads" placeholder="ads" />
+          <input type="number" id="discount" placeholder="discount" />
+          <span id="total">Total: 0</span>
+        </div>
+        <input type="number" id="count" placeholder="count" />
+        <input type="text" id="category" placeholder="category" />
+        <button id="create">Create</button>
+      </form>
+      <div class="search">
+        <input type="text" id="searh" placeholder="search" />
+        <div class="btn-grop">
+          <button id="s-title">by title</button>
+          <button id="s-category">by category</button>
+        </div>
+      </div>
+      <button id="deleteAll">Delete All</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total-price</th>
+            <th>category</th>
+            <th>count</th>
+            <th>update</th>
+            <th>out-one</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

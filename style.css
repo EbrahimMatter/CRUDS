@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --back: #393e46;
+  --btn: #948979;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  background-color: #222831;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  margin: auto;
+  width: 80%;
+}
+header {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 20px;
+}
+header p {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.money {
+  width: 90%;
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+.money input {
+  flex: 1;
+}
+input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: var(--back);
+  margin: 5px 0;
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: white;
+}
+input::placeholder {
+  color: white;
+  letter-spacing: 2px;
+}
+input:focus {
+  outline: none;
+}
+.money span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #948979;
+  padding: 0 10px;
+  border-radius: 0.5rem;
+  height: 30px;
+  margin: 10px;
+}
+button {
+  border: none;
+  height: 40px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: var(--btn);
+  font-weight: 400;
+}
+#create:active {
+  transform: scale(0.98);
+}
+#create:hover {
+  background: #dfd0b8;
+}
+.search input {
+  width: 100%;
+}
+.btn-grop {
+  display: flex;
+  column-gap: 15%;
+}
+.btn-grop button {
+  flex: 1;
+}
+.btn-grop button:hover {
+  background: #dfd0b8;
+}
+.btn-grop button:active {
+  transform: scale(0.98);
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+table th {
+  text-transform: uppercase;
+}
+th,
+td {
+  padding: 5px;
+}
+#deleteAll {
+  width: 100%;
+  margin-top: 15px;
+  display: none;
+}
+#deleteAll:active {
+  transform: scale(0.98);
+}
+#deleteAll:hover {
+  background: #dfd0b8;
+}
