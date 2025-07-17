@@ -61,6 +61,7 @@ create.addEventListener("click", function (e) {
     count: count.value,
     category: category.value,
   };
+  products.push(info);
   localStorage.setItem("product", JSON.stringify(products));
   clearData();
   showData();
